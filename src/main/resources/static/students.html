@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/add" method="POST">
+    <p>Insertar estudiante</p>
+
+    <div>
+        <label for="name">Name:</label>
+        <input name="name" id="name" value="Name">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input name="email" id="email" value="Email">
+    </div>
+    <div>
+        <label for="email">Password:</label>
+        <input name="password" id="password" value="Password">
+    </div>
+    <div>
+        <label for="nationality">Nationality:</label>
+        <input name="nationality" id="nationality" value="Nationality">
+    </div>
+    <div>
+        <label for="major">Major:</label>
+        <input name="major" id="major" value="Major">
+    </div>
+    <div>
+        <button>Guardar</button>
+    </div>
+</form>
+
+<hr/>
+
+<form action="api/students" method="GET">
+    <button>List students</button>
+</form>
+</body>
+</html>
